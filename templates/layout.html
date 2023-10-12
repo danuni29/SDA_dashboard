@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<head/>
+
+    <!DOCTYPE html>
+    <title>SDA</title>
+    <link href="{{url_for('static', filename='homepage.css')}}"
+          rel="stylesheet"
+          type="text/css">
+
+
+<body>
+    <center>
+        <nav>
+            <a href="./">Home</a>
+            <a href="{{url_for('about_func')}}">About</a>
+            <a href="{{url_for('menu_func')}}">Menu</a>
+            <a href="{{url_for('timetable_func')}}">Timetable</a>
+
+        </nav>
+    </center>
+
+    {% block content %}{% endblock %}
+</body>
+
+</html>
