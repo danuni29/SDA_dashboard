@@ -20,8 +20,8 @@ def timetable_func():
     return render_template("timetable.html")
 
 def menucrawling_func():
-    # URL = "https://sobi.chonbuk.ac.kr/function/ajax.get.rest.data.php"
-    URL = 'https://sobi.chonbuk.ac.kr/menu/week_menu.php'
+    URL = "https://sobi.chonbuk.ac.kr/function/ajax.get.rest.data.php"
+    # URL = 'https://sobi.chonbuk.ac.kr/menu/week_menu.php'
     data = {"code": "mobile1"}
 
     res = requests.post(URL, data=data)
