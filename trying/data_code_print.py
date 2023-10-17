@@ -15,3 +15,6 @@ else:
     print("요청 실패")
     print("HTTP 상태 코드:", response.status_code)
 
+# dP
+
+
