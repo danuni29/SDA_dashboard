@@ -5,38 +5,21 @@
 
     <h2>Smart Digital Agriculture Lab</h2>
 
-<!--    현재날씨 보여주기-->
-    <script type="text/javascript">
-      function showClock(){
-        var currentDate = new Date();
-        var divClock = document.getElementById('divClock');
-        var msg = "현재 시간 : ";
-        if(currentDate.getHours()>12){      //시간이 12보다 크다면 오후 아니면 오전
-          msg += "오후 ";
-          msg += currentDate.getHours()-12+"시 ";
-       }
-       else {
-         msg += "오전 ";
-         msg += currentDate.getHours()+"시 ";
-       }
-
-        msg += currentDate.getMinutes()+"분 ";
-        msg += currentDate.getSeconds()+"초";
-
-        divClock.innerText = msg;
-
-        if (currentDate.getMinutes()>58) {    //정각 1분전부터 빨강색으로 출력
-          divClock.style.color="red";
-        }
-        setTimeout(showClock,1000);  //1초마다 갱신
-      }
-    </script>
-  </head>
-  <body onload="showClock()">
+<!--    현재시간 보여주기-->
+    <link rel="stylesheet" type="text/css" href="static/hompage.css">
+    <script type="text/javascript" src="static/clock.js"></script>
+    <body onload="showClock()">
     <div id="divClock" class="clock">
 
     </div>
-  </body>
+    </body>
+<!--    현재날씨 보여주기-->
+    <script type="text/javascript" src="static/today_weather.js"></script>
+    <div class="weather">
+          <div class="CurrIcon"></div>
+          <div class="CurrTemp"></div>
+          <div class="City"></div>
+    </div>
 
 
 {% endblock %}
