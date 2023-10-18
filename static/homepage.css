@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
-nav a {
-    background-color: white;
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 150%;
-    text-align: center
-}
-nav a {color:gold}
+/*nav a {*/
+/*    background-color: white;*/
+/*    font-family: 'Black Han Sans', sans-serif;*/
+/*    font-size: 150%;*/
+/*    text-align: center*/
+/*}*/
+/*nav a {color:gold}*/
 
 .clock {
     font-family: 'Gowun Dodum', sans-serif;
-     font-size: 150%;
+     font-size: 300%;
     text-align: center
 }
 
@@ -33,7 +33,7 @@ h1 {
     font-style: italic;
     font-weight: lighter;
     margin-top: 50px;
-    font-size: 80px;
+    font-size: 300px;
 }
 
 h3 {
@@ -75,4 +75,10 @@ a {
     font-weight: lighter;
     margin-top: 50px;
     font-size: 40px;
+}
+
+.menu-data {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 150%;
+    text-align: center
 }

@@ -4,6 +4,8 @@ import os
 
 app = Flask(__name__)
 
+app.static_folder = 'static'
+
 @app.route("/")
 def first_page():
     return render_template("index.html")
@@ -31,14 +33,6 @@ def menucrawling_func():
 
 
 @app.route("/menu")
-# def menu_func(day):
-#
-#     if day == 'monday':
-#         menu_data = menucrawling_func('monday')
-#     elif day == 'tuesday':
-#         menu_data = menucrawling_func('tuesday')
-#     return render_template("menu.html", menu_data=menu_data, current_day = day)
-
 def menu_func():
     menu_data = menucrawling_func()
     return render_template("menu.html", menu_data=menu_data)
