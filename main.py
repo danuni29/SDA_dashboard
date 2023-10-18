@@ -30,7 +30,7 @@ def menucrawling_func():
     return res.text
 
 
-@app.route("/menu/<day>")
+@app.route("/menu")
 # def menu_func(day):
 #
 #     if day == 'monday':
