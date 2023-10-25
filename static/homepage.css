@@ -12,6 +12,22 @@ li a {color:gold}
 ul li{
     list-style: none;
 }
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+		font:bold 16px "malgun gothic";
+		width:700px;
+		height:50px;
+		background: #ccc;
+		color:black;
+		line-height: 50px;
+		margin:0 auto;
+		text-align: center;
+	}
+
 .clock {
     font-family: 'Gowun Dodum', sans-serif;
      font-size: 150%;
