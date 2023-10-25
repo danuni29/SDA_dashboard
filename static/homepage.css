@@ -7,8 +7,11 @@ nav a {
     font-size: 150%;
     text-align: center
 }
-nav a {color:gold}
+li a {color:gold}
 
+ul li{
+    list-style: none;
+}
 .clock {
     font-family: 'Gowun Dodum', sans-serif;
      font-size: 150%;

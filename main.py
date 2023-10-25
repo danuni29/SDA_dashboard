@@ -21,7 +21,6 @@ def timetable_func():
 
 def menucrawling_func():
     URL = "https://sobi.chonbuk.ac.kr/function/ajax.get.rest.data.php"
-    # URL = 'https://sobi.chonbuk.ac.kr/menu/week_menu.php'
     data = {"code": "mobile1"}
 
     res = requests.post(URL, data=data)
@@ -31,17 +30,9 @@ def menucrawling_func():
 
 
 @app.route("/menu")
-# def menu_func(day):
-#
-#     if day == 'monday':
-#         menu_data = menucrawling_func('monday')
-#     elif day == 'tuesday':
-#         menu_data = menucrawling_func('tuesday')
-#     return render_template("menu.html", menu_data=menu_data, current_day = day)
-
 def menu_func():
     menu_data = menucrawling_func()
-    return render_template("menu.html", menu_data=menu_data)
+    return render_template("menu.html", menu_data = menu_data )
 
 
 if __name__ == '__main__':

@@ -18,17 +18,20 @@
 
 
 <body>
-    <center>
-        <nav>
-            <a href="./">Home</a>
-            <a href="{{url_for('about_func')}}">About</a>
-            <a href="{{url_for('menu_func')}}">Menu</a>
-            <a href="{{url_for('timetable_func')}}">Timetable</a>
-
-        </nav>
-    </center>
+<div id="menu">
+    <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="{{url_for('about_func')}}">About</a></li>
+        <li><a href="{{url_for('menu_func')}}">Menu</a></li>
+            <ul>
+                <li><a href="#">진수당</a></li>
+                <li><a href="#">후생관</a></li>
+            </ul>
+        <li><a href="{{url_for('timetable_func')}}">Timetable</a></li>
+    </ul>
 
     {% block content %}{% endblock %}
+</div>
 </body>
 
 </html>
