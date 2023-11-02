@@ -2,13 +2,8 @@
 {% block content %}
 
     <h1>Menu</h1>
-    <div style="text-align: center;">
-        <div style="display: inline-block; text-align: left;">
-            <span class="menu-data">{{ menu_data|safe }}</span>
-        </div>
+    <div>
+        {{ menu_data|safe }}  <!-- 데이터를 출력하고, |safe를 사용하여 이스케이프 방지 -->
     </div>
-
-
-{#웹 크롤링#}
 
 {% endblock %}
