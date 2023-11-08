@@ -24,11 +24,20 @@
     <ul>
         <li><a href="./">Home</a></li>
         <li><a href="{{url_for('about_func')}}">About</a></li>
-        <li><a href="{{url_for('menu_func')}}">Menu</a></li>
-            <ul>
-                <li><a href="#">진수당</a></li>
-                <li><a href="#">후생관</a></li>
-            </ul>
+{#        <li><a href="{{url_for('menu_func')}}">Menu</a></li>#}
+{#            <ul>#}
+{#                <li><a href="#">진수당</a></li>#}
+{#                <li><a href="#">후생관</a></li>#}
+{#            </ul>#}
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href=href="{{url_for('menu_func')}}">진수원</a></li>
+            <li><a class="dropdown-item" href=href="{{url_for('menu_func')}}">후생관</a></li>
+
+          </ul>
         <li><a href="{{url_for('timetable_func')}}">Timetable</a></li>
     </ul>
 
