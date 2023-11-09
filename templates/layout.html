@@ -2,41 +2,44 @@
 <html lang="kr">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDA</title>
+{#    <link rel="stylesheet" href="style.css">#}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/b17d4fa9e7.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <title>SDA</title>
-    <link href="{{url_for('static', filename='homepage_1.css')}}" rel="stylesheet" type="text/css">
-<head/>
-
+    <link href="{{url_for('static', filename='homepage.css')}}" rel="stylesheet" type="text/css">
+</head>
 <body>
-<div id="menu">
-    <ul>
-        <li><a href="./">Home</a></li>
-        <li><a href="{{url_for('about_func')}}">About</a></li>
-{#        <li><a href="{{url_for('menu_func')}}">Menu</a></li>#}
-{#            <ul>#}
-{#                <li><a href="#">진수당</a></li>#}
-{#                <li><a href="#">후생관</a></li>#}
-{#            </ul>#}
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Menu
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href=href="{{url_for('menu_func')}}">진수원</a></li>
-            <li><a class="dropdown-item" href=href="{{url_for('menu_func')}}">후생관</a></li>
+    <nav class="navbar">
+        <div class="navbar__logo">
+{#            <i class="fab fa-accusoft"></i>#}
+            <a href="./">SDA</a>
+        </div>
 
-          </ul>
-        <li><a href="{{url_for('timetable_func')}}">Timetable</a></li>
-    </ul>
+        <ul class="navbar__menu">
+            <li><a href="./">Home</a></li>
+            <li><a href="{{url_for('about_func')}}">About</a></li>
+            <li><a href="{{url_for('menu_func')}}">Menu</a></li>
+            <li><a href="{{url_for('timetable_func')}}">Timetable</a></li>
 
-    {% block content %}{% endblock %}
-</div>
+        </ul>
+
+        <ul class="navbar__icons">
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-blog"></i></li>
+        </ul>
+
+        <a href="https://github.com/SmartDigitalAg" class="navbar__toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+{% block content %}{% endblock %}
 </body>
-
 </html>
