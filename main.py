@@ -21,20 +21,20 @@ def about_func():
 def timetable_func():
     return render_template("timetable.html")
 
-def menucrawling_func():
+def menucrawling_func(mobile):
     URL = "https://sobi.chonbuk.ac.kr/function/ajax.get.rest.data.php"
-    data = {"code": "mobile1"}
+    data = {"code": f"{mobile}"}
 
     res = requests.post(URL, data=data)
     res.encoding = "UTF-8"
 
     return res.text
 
+@app.route("/menu/<string:mobile>")
+def menu_func(mobile):
+    menu_data = menucrawling_func(mobile)
+    return render_template("menu.html", menu_data = menu_data, mobile=mobile )
 
-@app.route("/menu")
-def menu_func():
-    menu_data = menucrawling_func()
-    return render_template("menu.html", menu_data = menu_data )
 
 
 if __name__ == '__main__':
