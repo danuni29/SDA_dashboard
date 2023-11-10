@@ -198,6 +198,7 @@ a {
 }
 
 .slideshow-container {
+    padding: 20px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -248,3 +249,5 @@ a {
   display: block;
 
 }
+
+/*index 화면 구성*/
