@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "smartdigitalagriculture",
+  "private_key_id": "0ee0176ef7131862926e5ee697ea482626873a96",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxw2DVNBgcQcMr\nj7Olq/T2Io9I+vXU+Kiqeu6gFedCq7WPkYOBa1/dK3SlyPNp759tvtNBJ64AQBAC\nD4r7HqeN3FMJzkSTuLXeytW5vUSgePxFnPzSnURz6UMkTKktqdfrWmU/bxWIFL1j\n+2JL3kWpc11ux7iFXYEpkYWKtBzqAb+Md4BpTthMXuwEvwMQdwtnPlGgj/li1Xln\nGiab2BOBGzLAt/q/80JYpH2hG+dCSeaU1T+x7s3azKjoz5R+egp1rmGbIg68Z0CE\n4mU2fywhvPUjwKgZTAvP1asNtrEYAW0PBrbwClQyYflyrNmRPKO8u09R1xBnvOxw\nW5olpdUbAgMBAAECggEAISF3bjUf20BcdkV5p4KFjMxDJUh0weU4VlHEIL0EVZY4\nKBJoTporC0canf12dIOPFL6wk9+n2+8UrLWl4wjDFLsAFP9HI7sU1nm6XLxMSpZR\n+k14h259QBc1BtJs45BYqEo4PZrgCfVHmRdUqiw6koroWonJt72GIa+4EnJgQzKR\nsA0eX7j5egGSH95I62kD1dP9ImxCvtBElWBaOptNi7Lc5LqtPkleuYAhjDd5a5at\nNpuLrwuuN5jNX4Nh7JKV6LIh7LCe/7ZZUkwwPzorQkI3qeY3xbjlO2bgIpGcjyAz\nuGbhhEEvncLbDJj2+ZnPGjSTc1Y9zcHCS66qN1tMMQKBgQDYu4BSJYMADFR4wSJd\nS1BBqLK3aH1pMK4Asy0AqIU4Ou5tRyWELcdOrVtHsj8QiJ5cPe7dM/oIuIjBhttl\nAW3i+ta6tvVCu+u8KCfA5o7PaQvf7CNNDbk87qcCNGCpQxMlrPGuTSorx2GVMWiE\nd0/tz15zGgKtCq3tiiiSxZieMQKBgQDR+GdE92etzygCf0MjLCIpWceTlmOLTO27\ngXLczjSEAIfzRIjgCTGZl2DUgn7Io8QmabR3KnWjuvhLxKdKE1TkSnVXtowEza6K\nT7lXaqRdwqsnN+O96JxgcSfg74QC5BlyTerzTCTvwdreegB3djB58W96kBfZ6poQ\n52pvbJhZCwKBgEh9bk4LfeVmOlqpPnU124IaiqwNpuSoA4r4YvT1aJmGHHkwcrvj\nE+ac1QsF81H0YAM6M8qIt/hywEr6cCc4cyiX/Xo195J6iD5GsAU1GE8HM5GRybzb\n+jkHGZUDL9FtPdo8HhnOdWxvI5RjEjI8Nd+0nEKjUIHQMJxiuW9d584BAoGAP/id\nhf6WoPbPastZKhslIVIQIyAbnfJHL+yFkU5l453BzdUgmplSekgLoVNMy1ZRyZ5E\n9FWEV+j8AyGcEk6He7JPw/SC/men+M3HWyHLiCFqQd2eTlrTYfK3wqlWoAbc1d11\nasDVNBLs2wFyqPLiXBS58S57hdIbNHE9FUuRsvcCgYEAoIFF0rA4VKghJX9n6jl3\nj8KuGeXJwem0HHyJMHCvoiK5c++glvD8CCMptkN496/mOr8oIRIWFX/jpJfHF0Vr\nea+RmHYTq423aF/aAFhdyQ9eXXiWPi3Z/V4OssBfAnvgSGu4mrsakhqQ/8J7dbVq\nPUtUodWdVXxvKYVVcVyxYVw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "id-406@smartdigitalagriculture.iam.gserviceaccount.com",
+  "client_id": "109022329971589288680",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-406%40smartdigitalagriculture.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

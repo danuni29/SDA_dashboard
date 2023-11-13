@@ -2,7 +2,12 @@
 
 {% block content %}
     <h2>연구실 시간표</h2>
-    <center><img src="{{ url_for('static', filename='images/timetable.png') }}" >
+{#    <center><img src="{{ url_for('static', filename='images/timetable.png') }}" >#}
     </center>
+
+    {% if excel_data is not none %}
+        {{ excel_data.to_html() | safe }}
+    {% else %}
+
 
 {% endblock %}
