@@ -1,13 +1,22 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h2>연구실 시간표</h2>
-{#    <center><img src="{{ url_for('static', filename='images/timetable.png') }}" >#}
-    </center>
 
-    {% if excel_data is not none %}
-        {{ excel_data.to_html() | safe }}
-    {% else %}
+        <div class="content">
+    <div class="content-head">
+        <h2>연구실 시간표</h2>
+    </div>
+
+
+    </div>
+
+
+{#    <center><img src="{{ url_for('static', filename='images/timetable.png') }}" >#}
+{#    </center>#}
+
+{#    {% if excel_data is not none %}#}
+{#        {{ excel_data.to_html() | safe }}#}
+{#    {% else %}#}
 
 
 {% endblock %}

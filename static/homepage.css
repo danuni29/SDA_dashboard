@@ -18,18 +18,43 @@
      font-size: 150%;
     text-align: center
 }
+.content-head{
+    padding : 30px
+}
 
-h2 {
+.content-head h2 {
     font-family: 'Black Han Sans', sans-serif;
     color: steelblue;
     text-align: center;
     font-style: italic;
     font-weight: lighter;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     font-size: 60px;
 }
 
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.people {
+    display: flex;
+}
+
+.person img {
+    height: 265px;
+    width: 190px;
+    border-radius : 30%;
+    /*box-shadow : 5px 5px 5px;*/
+    border:5px solid steelblue;
+}
+.content {
+    padding : 20px
+}
+.person {
+    padding: 10px;
+    display: flex;
+}
 h1 {
     font-family: 'Black Han Sans', sans-serif;
     color: steelblue;
@@ -51,15 +76,15 @@ h3 {
 }
 
 
-p {
-    font-family: 'Black Han Sans', sans-serif;
-    color: #ffff00;
-    text-align: center;
-    font-style: italic;
-    font-weight: lighter;
-    margin-top: 50px;
-    font-size: 80px;
-}
+/*p {*/
+/*    font-family: 'Black Han Sans', sans-serif;*/
+/*    color: #ffff00;*/
+/*    text-align: center;*/
+/*    font-style: italic;*/
+/*    font-weight: lighter;*/
+/*    margin-top: 50px;*/
+/*    font-size: 80px;*/
+/*}*/
 
 label {
     font-family: 'Black Han Sans', sans-serif;

@@ -21,8 +21,9 @@ def about_func():
 
 @app.route("/timetable")
 def timetable_func():
-    excel_data = read_googlesheet_func()
-    return render_template("timetable.html", excel_data=excel_data)
+    # excel_data = read_googlesheet_func()
+    # return render_template("timetable.html", excel_data=excel_data)
+    return render_template("timetable.html")
 
 def menucrawling_func(mobile):
     URL = "https://sobi.chonbuk.ac.kr/function/ajax.get.rest.data.php"
@@ -40,15 +41,14 @@ def menu_func(mobile):
 
 def read_googlesheet_func():
     scope = [
-        # 'https://spreadsheets.google.com/feeds',
-        # 'https://www.googleapis.com/auth/drive',
+        'https://spreadsheets.google.com/feeds',
+        'https://www.googleapis.com/auth/drive',
         'https://www.googleapis.com/auth/spreadsheets'
     ]
-    # json_file_path = os.path.join('static', 'smartdigitalagriculture-0ee0176ef713.json')
-    # credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_path, scope)
-    json_file_name = 'C:\code\SDA_dashboard\static\smartdigitalagriculture-0ee0176ef713.json'
-
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, scope)
+    json_file_path = os.path.join('static', 'smartdigitalagriculture-0ee0176ef713.json')
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_path, scope)
+    # json_file_name = 'C:\code\SDA_dashboard\static\smartdigitalagriculture-0ee0176ef713.json'
+    # credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, scope)
 
     gc = gspread.authorize(credentials)
 
