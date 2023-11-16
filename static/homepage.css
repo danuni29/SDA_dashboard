@@ -143,6 +143,7 @@ a {
 
 .navbar__menu li {
     padding: 8px 12px;
+    font-size: 20px;
 
 }
 
@@ -160,6 +161,7 @@ a {
 
 .navbar__icons li {
     padding: 8px 12px;
+    font-size: 30px;
 }
 
 .navbar__toogleBtn {
@@ -170,40 +172,11 @@ a {
     color: #d49466;
 }
 
-/*@media screen and (max-width: 768px) {*/
-/*    .navbar {*/
-/*        flex-direction: column;*/
-/*        align-items: flex-start;*/
-/*        padding: 8px 24px;*/
-/*    }*/
-
-/*    .navbar__menu {*/
-/*        display: none;*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .navbar__menu li {*/
-/*        width: 100%;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .navbar__icons {*/
-/*        display: none;*/
-/*        justify-content: center;*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .navbar__toogleBtn {*/
-/*        display: block;*/
-/*    }*/
-
-/*    .navbar__menu.active,*/
-/*    .navbar__icons.active {*/
-/*        display: flex;*/
-/*    }*/
-/*}*/
+/*nav바 다듬기*/
+.title {
+    font-size: 40px;
+    padding: 30px;
+}
 
 /*자동슬라이드*/
 .Slidesbackground {
@@ -280,7 +253,7 @@ a {
 
 }
 
-/*index 화면 구성*/
+/*about 링크 아이콘 추가*/
 .github-link {
        color: black; /* GitHub link color */
        text-decoration: none;
