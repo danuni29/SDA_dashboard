@@ -55,6 +55,11 @@
     padding: 10px;
     display: flex;
 }
+
+.person a {
+    padding: 20px;
+    font-size: 22px;
+}
 h1 {
     font-family: 'Black Han Sans', sans-serif;
     color: steelblue;
@@ -282,9 +287,11 @@ a {
        display: inline-flex;
        align-items: center;
        margin-top: 10px; /* Adjust as needed */
+
    }
 
 .github-link i {
    margin-right: 5px; /* Adjust as needed */
     font-size: 30px;
 }
+
