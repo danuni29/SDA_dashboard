@@ -267,4 +267,12 @@ a {
    margin-right: 5px; /* Adjust as needed */
     font-size: 30px;
 }
+/* project 메뉴*/
+.project-img {
+    width: 397px;
+    height: 280px;
+}
 
+.each-project{
+    padding-bottom: 20px;
+}

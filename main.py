@@ -18,6 +18,10 @@ def first_page():
 def about_func():
     return render_template("about.html")
 
+@app.route("/project")
+def project_func():
+    return render_template("project.html")
+
 
 @app.route("/timetable")
 def timetable_func():

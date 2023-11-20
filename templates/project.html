@@ -1,0 +1,101 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="content">
+
+    <div class="container">
+        <div class="content-head">
+            <h2>project</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+        {#       :chamber data#}
+                <div class="each-project">
+                <div class="card" style="width: 25rem; ">
+                  <img src="./static/images/chamber.png" class="card-img-top project-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Chamber Data</h5>
+                    <p class="card-text">연구실 앞 챔버의 온도,습도, 광도의 정보를 알려준다.</p>
+                    <a href="http://web01.taegon.kr:8801/" target="_blank" class="btn btn-primary">이동</a>
+                  </div>
+                </div>
+                </div>
+
+{#                NDVI#}
+                <div class="each-project">
+                <div class="card" style="width: 25rem;">
+                  <img src="./static/images/wheatndvi.png" class="card-img-top project-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">WeatNDVI Dashboard</h5>
+                    <p class="card-text">익산과 남원의 NDVI.</p>
+                    <a href="http://web01.taegon.kr:8000/" target="_blank" class="btn btn-primary">익산</a>
+                    <a href="http://web01.taegon.kr:8507/" target="_blank" class="btn btn-primary">남원</a>
+                  </div>
+                </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-4">
+        {#         :8002#}
+                <div class="each-project">
+                <div class="card" style="width: 25rem;">
+                  <img src="./static/images/apsim.png" class="card-img-top project-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">APSIM Scenario Dashboard</h5>
+                    <p class="card-text">..</p>
+                    <a href="http://web01.taegon.kr:8002/" target="_blank" class="btn btn-primary">이동</a>
+                  </div>
+                </div>
+                </div>
+
+                <div class="each-project">
+                <div class="card" style="width: 25rem;">
+                  <img src="./static/images/wheatwater.png" class="card-img-top project-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">WheatWater Dashboard</h5>
+                    <p class="card-text">익산과 남원의 토양센서 대시보드</p>
+                    <a href="http://web01.taegon.kr:8506/" target="_blank" class="btn btn-primary">익산</a>
+                    <a href="http://web01.taegon.kr:8508/" target="_blank" class="btn btn-primary">남원</a>
+                  </div>
+                </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="col-4">
+
+        {#        :7000 #}
+                <div class="each-project">
+                <div class="card" style="width: 25rem;">
+                  <img src="./static/images/dashboard_iksan.png" class="card-img-top project-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">DASHBOARD_IKSAN</h5>
+                    <p class="card-text">..</p>
+                    <a href="http://web01.taegon.kr:7000/" target="_blank" class="btn btn-primary">이동</a>
+                  </div>
+                </div>
+                </div>
+
+                <div class="each-project">
+                <div class="card" style="width: 25rem;">
+                  <img src="./static/images/pest_classification.png" class="card-img-top project-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Pest-Classification</h5>
+                    <p class="card-text">해충분류모델</p>
+                    <a href="http://web01.taegon.kr:8509/" target="_blank" class="btn btn-primary">이동</a>
+                  </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </div>
+{% endblock %}
